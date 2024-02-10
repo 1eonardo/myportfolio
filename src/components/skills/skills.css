@@ -1,0 +1,190 @@
+.skills_container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-0-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--firts-color-green);
+}
+
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title{
+    font-size: var(--h3-font-size);
+}
+
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.skills_arrow{
+    margin-left:auto;
+    transition: .4s;
+}
+
+.skills_list{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked ~ .skills_list{
+    max-height: 450px;
+}
+
+input:checked ~ label .skills_arrow{
+    transform: rotate(-180deg);
+    color: var(--first-color-green);
+}
+
+input:checked ~ label .skills_icon{
+    color: var(--first-color-green);
+}
+
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar{
+    background-color: var(--first-color-light);
+}
+
+.skills_percentage{
+    display: block;
+    background-color: var(--first-color-green);
+}
+
+input[type="radio"]:checked ~ * .skills_percentage{
+    animation: fillbar 1.5s 1;
+}
+
+@keyframes fillbar {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+.skills_html{
+    max-width: 90%;
+}
+
+.skills_css{
+    max-width: 90%;
+}
+
+.skills_js{
+    max-width: 80%;
+}
+
+.skills_react{
+    max-width: 70%;
+}
+
+.skills_tailwind{
+    max-width: 40%;
+}
+
+.skills_framer{
+    max-width: 40%;
+}
+
+.skills_gsap{
+    max-width: 40%;
+}
+
+
+/*===============*/
+.skills_php{
+    max-width: 70%;
+}
+
+.skills_mysql{
+    max-width: 70%;
+}
+
+.skills_nodejs{
+    max-width: 50%;
+}
+
+.skills_type{
+    max-width: 50%;
+}
+
+.skills_fire{
+    max-width: 50%;
+}
+
+/*===============*/
+
+.skills_csharp{
+    max-width: 70%;
+}
+.skills_sql{
+    max-width: 70%;
+}
+.skills_bunifu{
+    max-width: 70%;
+}
+
+
+
+/*============BREAKPOINTS==================*/
+
+/*For large device*/
+@media screen and (max-width: 992px) {
+
+  }
+  
+  /*For medium device*/
+  @media screen and (max-width: 768px) {
+  
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    .skills_container{
+        grid-template-columns: none;
+    }
+  }
+  
+  /*For small device*/
+  @media screen and (max-width: 350px) {
+    .skills_container{
+        grid-template-columns: none;
+    }
+  }

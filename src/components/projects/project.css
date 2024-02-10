@@ -1,0 +1,108 @@
+.project_categories{
+    display: block;
+    column-gap: 3rem;
+    text-align: center;
+}
+
+.category_btn{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--small-font-size);
+    background-color: var(--project-color-back);
+    border-radius: 0.5rem;
+    position: relative;
+    cursor:pointer;
+    margin: 2rem;
+    padding: 5px 10px;
+    font-family: var(--body-font);
+}
+
+.active-work {
+    background-color: var(--container-color-black2);
+    color: var(--container-color);
+}
+
+.category_btn:hover{
+    background-color: var(--container-color-black2);
+    color: var(--container-color);
+    border-radius: 0.5rem;
+}
+
+.porfolio_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.project_item {
+    background: var(--container-color);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+.project_item:hover{
+    border-color: var(--first-color-green);
+    background: transparent;
+}
+
+.portfolio_item-image{
+    border-radius: 1.3rem;
+    overflow: hidden;
+    max-height: 12rem;
+}
+
+.project_img{
+    transition: 1.1s;
+}
+
+.project_img:hover{
+    transform: scale(1.2);
+}
+
+.project_title{
+    margin: 1.2 0 2rem;
+    text-align: center;
+    font-size: var(--normal-font-size);
+}
+
+.project_description{
+    text-align: center;
+    font-size: var(--tiny-font-size);
+    padding: 3px;
+}
+
+.project_lenguages{
+    text-align: center;
+    font-size: var(--tiny-font-size);
+    padding: 0px;
+    word-spacing: 3rem;
+}
+
+.container_btn{
+    position: relative;
+    text-align: center;
+}
+
+.btndemo{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 20px;
+
+}
+
+.btndemo:hover{
+    color: var(--container-color-black);
+}
+
+/* Add a media query for screens with a max width of 576px */
+@media (max-width: 576px) {
+    .porfolio_container {
+        grid-template-columns: 1fr; 
+    }
+}

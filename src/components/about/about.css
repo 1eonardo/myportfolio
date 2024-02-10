@@ -1,0 +1,143 @@
+
+.about_container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+
+/*.Oval{
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMjUwIiB2aWV3Qm94PSIwIDAgMTQwIDI1MCI+DQogIDxyZWN0IGlkPSJSZWN0w6FuZ3Vsb18xIiBkYXRhLW5hbWU9IlJlY3TDoW5ndWxvIDEiIHdpZHRoPSIxNDAiIGhlaWdodD0iMjUwIiByeD0iNzAiIGZpbGw9IiMwNDA0MDQiLz4NCjwvc3ZnPg0K);
+    -webkit-mask-repeat: no-repeat;
+    margin-left: 10rem;
+}*/
+
+.about_img{
+    position: relative;
+    background-size: cover;
+    width: 220px;
+    height: 260px;
+    left: 10rem;
+    border: none;
+}
+
+/*
+.Oval::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    left: 18rem;
+    bottom: -89%;
+    background:rgba(58, 241, 162, 1);
+    background: repeating-conic-gradiant();
+    background-size: cover;
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(10px);
+}
+*/
+
+.about_title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.about_subtitle{
+    font-size: var(--tiny-font-size);
+}
+
+.about_description{
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2);
+    font-size: 0.75rem;
+}
+
+.about_info{
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about_info-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about_info-name{
+    font-size: var(--small-font-size);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
+}
+
+/*============BREAKPOINTS==================*/
+
+/*For large device*/
+@media screen and (max-width: 992px) {
+    /*
+    .about{
+        margin-top: 2.5rem;
+    }*/
+
+    .about_container{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about_img{
+        width: 220px;
+    }
+
+    .about_box{
+        padding: 1rem 0.5rem;
+    }
+
+    .about_data{
+        text-align: center;
+    }
+
+    .about_info{
+        justify-content: center;
+    }
+
+    .about_description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  /*For medium device*/
+  @media screen and (max-width: 768px) {
+  
+  }
+  
+  @media screen and (max-width: 576px) {
+    /*.about{
+        margin-top: 6rem;
+    }*/
+
+    .about_img{
+        margin-left: -5rem;
+    }
+
+    .about_info{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about_description{
+        padding: 0;
+    }
+  }
+  
+  /*For small device*/
+  @media screen and (max-width: 350px) {
+    .about_info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  }

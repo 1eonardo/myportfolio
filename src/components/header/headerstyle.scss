@@ -1,0 +1,50 @@
+#darkMode {
+  background: #ededed;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  height: 20px;
+  width: 40px;
+  margin-top: 7px;
+  &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: linear-gradient(rgb(253, 253, 253), rgb(234, 234, 234));
+    top: 2px;
+    left: 3px;
+    right: unset;
+    border-radius: 100px;
+    transition: -3s ease all;
+    box-shadow: 0px 0px 1px 1px rgba(106, 105, 105, 0.2);
+  }
+  &.active {
+    background: #3CECA5;
+    color: #000;
+    &::after {
+      right: 3px;
+      left: unset;
+    }
+  }
+}
+
+.darkicon {
+  width: 15px;
+  height: 15px;
+  left: 3px;
+  top: 0px;
+  margin-right: 3px;
+  line-height: 20px;
+  display: block;
+  background: none;
+  color: #717171;
+  text-align: center;
+  position: relative;
+  pointer-events: none;
+}
+
