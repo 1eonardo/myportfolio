@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.48f51833.css",
-    "main.js": "/myportfolio/static/js/main.69d1ef1e.js",
+    "main.js": "/myportfolio/static/js/main.e717e4d5.js",
     "static/js/787.9746b23e.chunk.js": "/myportfolio/static/js/787.9746b23e.chunk.js",
-    "static/media/Curriculum_Leo.pdf": "/myportfolio/static/media/Curriculum_Leo.c196fb8123aae5714078.pdf",
+    "static/media/Curriculum_Leo.pdf": "/myportfolio/static/media/Curriculum_Leo.fac05c9f0965a72af18d.pdf",
     "static/media/Emailtemplate.jpg": "/myportfolio/static/media/Emailtemplate.4e8b208cc5bd0011d78c.jpg",
     "static/media/TherapistYoga2.jpg": "/myportfolio/static/media/TherapistYoga2.c1df3ade1e47e9361139.jpg",
     "static/media/AppShop2.jpg": "/myportfolio/static/media/AppShop2.d50abe5e5b6a8384d91f.jpg",
@@ -17,11 +17,11 @@
     "static/media/logo2.png": "/myportfolio/static/media/logo2.59f73818d9ececfbb345.png",
     "index.html": "/myportfolio/index.html",
     "main.48f51833.css.map": "/myportfolio/static/css/main.48f51833.css.map",
-    "main.69d1ef1e.js.map": "/myportfolio/static/js/main.69d1ef1e.js.map",
+    "main.e717e4d5.js.map": "/myportfolio/static/js/main.e717e4d5.js.map",
     "787.9746b23e.chunk.js.map": "/myportfolio/static/js/787.9746b23e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48f51833.css",
-    "static/js/main.69d1ef1e.js"
+    "static/js/main.e717e4d5.js"
   ]
 }
